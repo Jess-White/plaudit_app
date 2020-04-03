@@ -37,26 +37,24 @@ class Api::RecipientsController < ApplicationController
     def update
       @recipient = Recipient.find(params[:id])
 
-      @recipient.
+      @recipient.first_name = params[:first_name] || @recipient.first_name
+      @recipient.last_name = params[:last_name] || @recipient.last_name
+      @recipient.title = params[:title] || @recipient.title
+      @recipient.company = params[:company] || @recipient.company
+      @recipient.address = params[:address] || @recipient.address
+      @recipient.city = params[:city] || @recipient.city
+      @recipient.state = params[:state] || @recipient.state
+      @recipient.zip = params[:zip] || @recipient.zip
+      @recipient.referee_id = params[:referee_id] || @recipient.referee_id
 
+      @recipient.save
+      render 'show.json.jb'
+    end 
 
-
-
-
-
-
+    def destroy
+      recipient = Recipient.find(params[:id])
+      recipient.destroy
+      render json: {message: "Recipient successfully destroyed"}
+    end 
 end
 
-# create_table "recipients", force: :cascade do |t|
-#     t.string "first_name"
-#     t.string "last_name"
-#     t.string "title"
-#     t.string "company"
-#     t.string "address"
-#     t.string "city"
-#     t.string "state"
-#     t.string "zip"
-#     t.integer "referee_id"
-#     t.datetime "created_at", precision: 6, null: false
-#     t.datetime "updated_at", precision: 6, null: false
-#   end
