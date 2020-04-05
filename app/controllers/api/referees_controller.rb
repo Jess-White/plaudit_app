@@ -16,7 +16,7 @@ class Api::RefereesController < ApplicationController
                             last_name: params[:last_name],
                              title: params[:title], 
                              start_date: params[:start_date],
-                             end_date: params[end_date],
+                             end_date: params[:end_date],
                              notes: params[:notes],
                              email: params[:email] 
                             )

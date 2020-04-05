@@ -5,10 +5,10 @@
   company_address: user.company_address,
   company_city: user.company_city,
   company_zip: user.company_zip,
-  email: user.company_email,
+  email: user.email,
   background: user.background,
   first_name: user.first_name,
-  last_name: user.last_name
+  last_name: user.last_name,
   created_at: user.created_at,
   updated_at: user.updated_at
 }

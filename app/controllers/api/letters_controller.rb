@@ -46,7 +46,7 @@ class Api::LettersController < ApplicationController
     @letter.section_background = params[:section_background] || @letter.section_background
     @letter.section_relationship = params[:section_relationship] || @letter.section_relationship
     @letter.section_strengths = params[:section_strengths] || @letter.section_strengths
-    @letter.section_closer = params[:section_closer] || section_closer
+    @letter.section_closer = params[:section_closer] || @section_closer
 
     @letter.save
     render 'show.json.jb'
@@ -55,6 +55,6 @@ class Api::LettersController < ApplicationController
   def destroy
     letter = Letter.find(params[:id])
     letter.destroy
-    render json: {message: "Letter successfully destroy"}
+    render json: {message: "Letter successfully destroyed"}
   end 
 end

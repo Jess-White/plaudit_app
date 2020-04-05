@@ -26,7 +26,7 @@ class Api::RecipientsController < ApplicationController
     if @recipient.save
       render "show.json.jb"
     else
-      render json: {errors: @recipients.errors.messages}, status: :unprocessable entity
+      render json: {errors: @recipients.errors.full_messages}, status: :unprocessable_entity
     end
   end 
 
