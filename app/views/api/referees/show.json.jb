@@ -1,0 +1,1 @@
+render partial: "referee.json.jb", locals: {referee: @referee}

@@ -1,0 +1,14 @@
+{
+  id: letter.id,
+  user_id: letter.user_id,
+  referee_id: letter.referee_id,
+  title: letter.title,
+  recipient_info: letter.recipient_info,
+  date: letter.date,
+  section_background: letter.section_background,
+  section_relationship: letter.section_relationship,
+  section_strengths: letter.section_strengths,
+  section_closer: letter.section_closer,
+  created_at: letter.created_at,
+  updated_at: letter.updated_at
+}

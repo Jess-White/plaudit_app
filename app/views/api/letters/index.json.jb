@@ -1,0 +1,3 @@
+@letters.map do |letter|
+  render partial: "letter.json.jb", locals: {letter: letter}
+end

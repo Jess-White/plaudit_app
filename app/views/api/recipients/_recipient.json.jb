@@ -1,0 +1,14 @@
+{
+  id: recipient.id,
+  first_name: recipient.first_name,
+  last_name: recipient.last_name,
+  title: recipient.title,
+  company: recipient.company,
+  address: recipient.address,
+  city: recipient.city,
+  state: recipient.state,
+  zip: recipient.zip,
+  referee_id: recipient.referee_id,
+  created_at: recipient.created_at,
+  updated_at: recipient.updated_at
+}

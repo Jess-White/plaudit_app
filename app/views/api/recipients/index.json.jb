@@ -1,0 +1,3 @@
+@recipients.map do |recipient|
+  render partial: "recipient.json.jb", locals: {recipient: recipient}
+end

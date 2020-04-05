@@ -1,0 +1,1 @@
+render partial: "recipient.json.jb", locals: {recipient: @recipient}

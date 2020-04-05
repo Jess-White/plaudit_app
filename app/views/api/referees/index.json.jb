@@ -1,0 +1,3 @@
+@referees.map do |referee|
+  render partial: "referee.json.jb", locals: {referee: referee}
+end

@@ -1,0 +1,12 @@
+{
+  id: referee.id,
+  first_name: referee.first_name,
+  last_name: referee.last_name,
+  title: referee.title,
+  start_date: referee.start_date,
+  end_date: referee.end_date,
+  notes: referee.notes,
+  email: referee.email,
+  created_at: referee.created_at,
+  updated_at: referee.updated_at
+}
