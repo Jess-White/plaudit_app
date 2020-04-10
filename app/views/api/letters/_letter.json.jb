@@ -10,5 +10,6 @@
   section_strengths: letter.section_strengths,
   section_closer: letter.section_closer,
   created_at: letter.created_at,
-  updated_at: letter.updated_at
+  updated_at: letter.updated_at,
+  user: "hello"
 }

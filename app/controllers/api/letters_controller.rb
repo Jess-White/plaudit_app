@@ -1,6 +1,6 @@
 class Api::LettersController < ApplicationController
 
-  # before_action :authenticate_user
+  before_action :authenticate_user
 
   def index 
     @letters = Letter.all
@@ -23,6 +23,7 @@ class Api::LettersController < ApplicationController
                           section_strengths: params[:section_strengths],
                           section_closer: params[:section_closer]
                           )
+    p current_user
     if @letter.save
       render "show.json.jb"
     else
